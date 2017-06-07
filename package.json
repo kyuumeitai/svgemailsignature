@@ -1,0 +1,26 @@
+{
+  "name": "firma",
+  "version": "1.0.0",
+  "description": "Firma HTML para mad.cl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Álex Acuña Viera",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-validator": "^2.20.8",
+    "gifsicle": "^3.0.4",
+    "gm": "^1.23.0",
+    "mkdirp-promise": "^3.0.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta5",
+    "svg-to-png": "^3.1.2",
+    "svg2png": "^3.0.1",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4"
+  }
+}
