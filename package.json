@@ -4,23 +4,48 @@
   "description": "Firma HTML para mad.cl",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "lint": "eslint index.js",
+    "format": "prettier-standard index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Álex Acuña Viera",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-validator": "^2.20.8",
-    "gifsicle": "^3.0.4",
     "gm": "^1.23.0",
-    "mkdirp-promise": "^3.0.1",
-    "path": "^0.12.7",
+    "mkdirp-then": "^1.2.0",
     "pug": "^2.0.0-beta5",
-    "svg-to-png": "^3.1.2",
-    "svg2png": "^3.0.1",
-    "underscore": "^1.8.3",
+    "replacestream": "^4.0.2",
     "underscore.string": "^3.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier-standard": "^5.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true,
+      "mocha": true
+    },
+    "rules": {
+      "semi": [
+        2,
+        "always"
+      ]
+    }
   }
 }
